@@ -3,38 +3,28 @@ import logo from '../assets/logo.png';
 
 const Header = () => {
   const handleScroll = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <header className="bg-gray-900 text-white py-6 px-8 md:px-12 md:py-8 flex justify-between items-center shadow-xl" dir="rtl">
-      {/* Logo Section */}
-      <img
-        src={logo}
-        alt="Logo"
-        className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] object-contain"
-      />
-
-      {/* Navigation Section */}
-      <nav className="flex space-x-6 space-x-reverse text-lg font-semibold">
+    <header className="bg-green-50 shadow-md backdrop-blur-md text-gray-900 py-6 px-8 md:px-12 flex justify-between items-center shadow-lg" dir="rtl">
+      <img src={logo} alt="Logo" className="w-20 h-20 md:w-24 md:h-24 object-contain" />
+      <nav className="flex space-x-4 space-x-reverse text-lg font-semibold">
         <button
           onClick={() => handleScroll('activities')}
-          className="focus:outline-none transition-all duration-300 ease-in-out hover:text-yellow-400"
+          className="hover:text-green-300 transition duration-300"
         >
           الأنشطة
         </button>
         <button
           onClick={() => handleScroll('about')}
-          className="focus:outline-none transition-all duration-300 ease-in-out hover:text-yellow-400"
+          className="hover:text-green-300 transition duration-300"
         >
           عن الجمعية
         </button>
         <button
           onClick={() => handleScroll('donate')}
-          className="focus:outline-none transition-all duration-300 ease-in-out hover:text-yellow-400"
+          className="hover:text-green-300 transition duration-300"
         >
           للتبرع
         </button>

@@ -1,16 +1,35 @@
 import React from 'react';
 
 const AboutSection = () => {
-    return (
-        <section id="about" className="bg-gray-100 py-12 px-6 md:px-20 text-gray-800" dir="rtl">
-            <div className="max-w-5xl mx-auto text-center">
-                <h2 className="text-3xl font-semibold text-blue-600 mb-6">عن الجمعية</h2>
-                <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-                    مرحباً بكم في جمعيتنا المدنية. نحن ملتزمون بتحسين جودة الحياة لجميع السكان من خلال مختلف المبادرات والبرامج التي تهدف إلى تعزيز التواصل المجتمعي، التمكين الاقتصادي، والحفاظ على البيئة. نحن نؤمن أن العمل المشترك يمكن أن يصنع فرقاً حقيقياً.
-                </p>
-            </div>
-        </section>
-    );
+  return (
+    <section id="about" className="bg-green-50 py-12 px-6 md:px-20 text-green-900" dir="rtl">
+        
+      <div className="max-w-5xl mx-auto text-center">
+      <h2 className="text-3xl font-semibold text-green-600 mb-6">
+          عن الجمعية
+        </h2>
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-green-700">
+            جمعية تنمية المدينة لخدمات البيئة
+          </h1>
+          <p className="text-lg md:text-xl text-green-600 mt-2">
+            نقدم لكم رؤية شاملة عن مشاريعنا وأنشطتنا التي تهدف إلى تحسين البيئة وتنمية المجتمع.
+          </p>
+        </header>
+
+
+        <p className="text-lg md:text-xl leading-relaxed mb-6">
+          جمعية تنمية المدينة لخدمات البيئة المشهرة برقم ١٢١٩٨ لسنة ٢٠٢٤ تهدف إلى تحسين جودة الحياة لجميع السكان 
+          من خلال تنفيذ مشاريع بيئية وتنموية مبتكرة. نسعى لخلق بيئة نظيفة ومستدامة تلبي احتياجات المجتمع وتوفر 
+          فرصًا للابتكار والتعاون.
+        </p>
+        <p className="text-lg md:text-xl leading-relaxed">
+          نحن نؤمن بأن العمل الجماعي والتعاون مع الأفراد والمؤسسات المحلية يساعد في تحقيق أهدافنا وتحقيق تغيير 
+          إيجابي في المجتمع. نرحب دائمًا بالأفكار الجديدة والمقترحات التي تساهم في تنمية البيئة المحلية.
+        </p>
+      </div>
+    </section>
+  );
 };
 
 export default AboutSection;
