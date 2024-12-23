@@ -37,7 +37,7 @@ const Footer = () => {
           <p className="mt-4 text-gray-300">
             
           <FaPhoneAlt className="inline-block ml-2 text-lg text-yellow-300" />
-          <strong>رقم الهاتف:</strong> <a href="https://wa.me/01211101073" target="_blank" rel="noopener noreferrer" className="inline-block mr-2 text-lg text-yellow-300" aria-label="WhatsApp link to 01211101073">+201211101073</a>
+          <strong>رقم الهاتف:</strong> <a href="https://wa.me/01211101073" target="_blank" rel="noopener noreferrer" className="inline-block mr-2 text-lg text-yellow-300" aria-label="WhatsApp link to 01211101073">01211101073</a>
           </p>
           <p className="text-gray-300">
             📍 <strong>العنوان:</strong> <a href='https://maps.app.goo.gl/erAgwPeMpS2JMtZWA' target="_blank" className="inline-block mr-2 text-lg text-yellow-300"> قطعة 4 بلوك 12 بجوار المنارة للخضروات والفاكهة - منتجع النخيل، مدخل 2 </a>
