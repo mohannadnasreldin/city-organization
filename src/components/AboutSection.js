@@ -2,10 +2,10 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-green-50 py-12 px-6 md:px-20 text-green-900" dir="rtl">
+    <section id="about" className="bg-green-100 py-12 px-6 md:px-20 text-green-900" dir="rtl">
         
       <div className="max-w-5xl mx-auto text-center">
-      <h2 className="text-3xl font-semibold text-green-600 mb-6">
+      <h2 className="text-3xl font-bold text-red-600 mb-6">
           عن الجمعية
         </h2>
         <header className="mb-8">
@@ -19,9 +19,7 @@ const AboutSection = () => {
 
 
         <p className="text-lg md:text-xl leading-relaxed mb-6">
-          جمعية تنمية المدينة لخدمات البيئة المشهرة برقم ١٢١٩٨ لسنة ٢٠٢٤ تهدف إلى تحسين جودة الحياة لجميع السكان 
-          من خلال تنفيذ مشاريع بيئية وتنموية مبتكرة. نسعى لخلق بيئة نظيفة ومستدامة تلبي احتياجات المجتمع وتوفر 
-          فرصًا للابتكار والتعاون.
+          جمعية تنمية المدينة لخدمات البيئة المشهرة برقم ١٢١٩٨ لسنة ٢٠٢٤ تحت مظلة وزارة التضامن الاجتماعي 
         </p>
         <p className="text-lg md:text-xl leading-relaxed">
           نحن نؤمن بأن العمل الجماعي والتعاون مع الأفراد والمؤسسات المحلية يساعد في تحقيق أهدافنا وتحقيق تغيير 
