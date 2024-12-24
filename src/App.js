@@ -8,7 +8,7 @@ import AboutSection from './components/AboutSection';
 import DonateSection from './components/DonateSection';
 import ActivityDetails from './components/ActivityDetails';
 import GoalsSection from './components/GoalsSection';
-
+import VolunteerSection from './components/VolunteerSection';
 const App = () => {
   return (
     <Router>
@@ -22,6 +22,7 @@ const App = () => {
               <>
                 <ActivitySection />
                 <GoalsSection />
+                <VolunteerSection />
                 <AboutSection />
                 <DonateSection />
               </>

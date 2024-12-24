@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const activities = [
-  { id: 1, title: "حماية البيئة و المحافظة عليها", image: "https://images.unsplash.com/photo-1659004249963-1c1bdecfcbb8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 2, title: "الخدمات الثقافية و العلمية و الدينية", image: "https://images.unsplash.com/photo-1598335624134-5bceb5de202d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { id: 3, title: "حماية المستهلك", image: "https://images.unsplash.com/photo-1551731409-43eb3e517a1a?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 1, title: "حماية البيئة و المحافظة عليها", image: "https://images.akhbarelyom.com/images/images/large/20240908130824715.jpg" },
+  { id: 2, title: "الخدمات الثقافية و العلمية و الدينية", image: "https://mliesl.edu/assets/images/what-is-mli/image-gallery/westwood-class-8.jpg" },
+  { id: 3, title: "حماية المستهلك", image: "https://ammannet.net/sites/default/files/styles/news_landing/public/2023-09/6c675cdf-9e8f-43e8-a8cd-1ca535d0bade.jpg?h=8d16384a&itok=SmEhX_oE" },
 ];
 
 const ActivitySection = () => {
@@ -26,40 +26,46 @@ const ActivitySection = () => {
   }, []);
 
   return (
-    <section id="activities" className="bg-white py-12 px-6 md:px-20 text-center">
+    <section id="activities" className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 py-16 px-6 md:px-24 text-center text-white">
       <div className="relative max-w-4xl mx-auto">
         <div
-          className="bg-green-50 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 cursor-pointer"
+          className="bg-white p-6 rounded-3xl shadow-xl transition-all duration-500 transform hover:scale-105 cursor-pointer"
           onClick={() => navigate(`/activity/${activities[currentIndex].id}`)}
         >
-          <img
-            src={activities[currentIndex].image}
-            alt={activities[currentIndex].title}
-            className="w-full h-64 sm:h-80 md:h-96 object-contain rounded-md mb-4"
-          />
-          <p className="text-lg font-semibold text-red-700">{activities[currentIndex].title}</p>
+          <div className="relative">
+            <img
+              src={activities[currentIndex].image}
+              alt={activities[currentIndex].title}
+              className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-xl transition-all duration-500"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-xl">
+              <p className="text-2xl font-bold text-white">{activities[currentIndex].title}</p>
+            </div>
+          </div>
         </div>
 
+        {/* Navigation Buttons */}
         <button
           onClick={() => setCurrentIndex((prevIndex) => (prevIndex === 0 ? activities.length - 1 : prevIndex - 1))}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-green-700 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-all"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-green-700 text-white p-3 rounded-full hover:bg-green-600 transition-all"
         >
           ◀
         </button>
 
         <button
           onClick={() => setCurrentIndex((prevIndex) => (prevIndex === activities.length - 1 ? 0 : prevIndex + 1))}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-green-700 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-all"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-green-700 text-white p-3 rounded-full hover:bg-green-600 transition-all"
         >
           ▶
         </button>
       </div>
 
-      <div className="flex justify-center mt-4 space-x-2">
+      {/* Dot Indicators */}
+      <div className="flex justify-center mt-6 space-x-3">
         {activities.map((_, index) => (
           <span
             key={index}
-            className={`h-3 w-3 rounded-full transition-all duration-300 ${currentIndex === index ? "bg-green-500" : "bg-green-300"}`}
+            className={`h-3 w-3 rounded-full transition-all duration-300 ${currentIndex === index ? "bg-green-300 scale-125" : "bg-green-100"}`}
           ></span>
         ))}
       </div>
