@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /admin/  # Adjust if you have specific pages you want to block
 Allow: /
+Sitemap: https://city-development-association.vercel.app/sitemap.xml
