@@ -9,6 +9,8 @@ import DonateSection from './components/DonateSection';
 import ActivityDetails from './components/ActivityDetails';
 import GoalsSection from './components/GoalsSection';
 import VolunteerSection from './components/VolunteerSection';
+import FoundersSection from './components/FoundersSection';
+
 const App = () => {
   return (
     <Router>
@@ -24,10 +26,11 @@ const App = () => {
                 <GoalsSection />
                 <VolunteerSection />
                 <AboutSection />
+                <FoundersSection />
                 <DonateSection />
               </>
             } />
-            <Route path="/activity/:id" element={<ActivityDetails />} />
+            <Route path="/:id" element={<ActivityDetails />} />
           </Routes>
         </main>
         <Footer />

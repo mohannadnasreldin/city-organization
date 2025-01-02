@@ -3,7 +3,7 @@ import React from 'react';
 const GoalsSection = () => {
   return (
     <section id="goals" className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 py-16 px-6 md:px-24 text-center text-white" dir="rtl">
-      <div className="max-w-5xl mx-auto bg-white p-10 rounded-3xl shadow-2xl transition-all duration-500 transform hover:scale-105">
+      <div className="max-w-7xl mx-auto bg-white p-10 rounded-3xl shadow-2xl transition-all duration-500 transform hover:scale-105">
         <h2 className="text-4xl font-extrabold text-red-600 mb-8 tracking-wide">
           أهداف الجمعية
         </h2>
@@ -18,7 +18,7 @@ const GoalsSection = () => {
           ].map((goal, index) => (
             <div
               key={index}
-              className="p-4 bg-green-50 text-green-800 rounded-lg shadow-md hover:bg-green-100 hover:shadow-lg transition-all duration-300"
+              className="p-4 bg-green-50 text-black rounded-lg shadow-md hover:bg-green-100 hover:shadow-lg transition-all duration-300"
             >
               <p className="text-xs sm:text-lg font-medium">{goal}</p>
             </div>

@@ -27,10 +27,10 @@ const ActivitySection = () => {
 
   return (
     <section id="activities" className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 py-16 px-6 md:px-24 text-center text-white">
-      <div className="relative max-w-4xl mx-auto">
+      <div className="relative max-w-7xl mx-auto">
         <div
           className="bg-white p-6 rounded-3xl shadow-xl transition-all duration-500 transform hover:scale-105 cursor-pointer"
-          onClick={() => navigate(`/activity/${activities[currentIndex].id}`)}
+          onClick={() => navigate(`/${activities[currentIndex].id}`)}
         >
           <div className="relative">
             <img

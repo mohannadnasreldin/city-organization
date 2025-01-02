@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTelegram, FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
+import { FaFacebook, FaTelegram, FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
           <p className="mt-4 text-gray-300">
             <FaPhoneAlt className="inline-block ml-2 text-lg text-yellow-300" />
-            <strong>رقم الهاتف:</strong>{' '}
+            رقم الهاتف:{' '}
             <a
               href="https://wa.me/01211101073"
               target="_blank"
@@ -55,18 +55,20 @@ const Footer = () => {
             </a>
           </p>
           <p className="text-gray-300">
-            📍 <strong>العنوان:</strong>{' '}
-            <a
-              href="https://maps.app.goo.gl/erAgwPeMpS2JMtZWA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mr-2 text-lg text-yellow-300"
-            >
-              قطعة 4 بلوك 12 بجوار المنارة للخضروات والفاكهة - منتجع النخيل، مدخل 2
-            </a>
-          </p>
+  <FaMapMarkerAlt className="inline-block mr-1 text-yellow-300 text-lg" />
+  العنوان:{' '}
+  <a
+    href="https://maps.app.goo.gl/erAgwPeMpS2JMtZWA"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Open location in Google Maps"
+    className="inline-block mr-2 text-lg text-yellow-300 truncate"
+  >
+    قطعة 4 بلوك 12 بجوار المنارة للخضروات والفاكهة - منتجع النخيل، مدخل 2
+  </a>
+</p>
           <p className="text-gray-300">
-            📧 <strong>البريد الإلكتروني:</strong>{' '}
+            📧 البريد الإلكتروني:{' '}
             <a
               href="mailto:citydevelopmentassociation@gmail.com"
               className="inline-block mr-2 text-lg text-yellow-300"
@@ -79,7 +81,7 @@ const Footer = () => {
         {/* Speed Links Section */}
         <nav>
           <h3 className="text-xl font-semibold text-center text-yellow-300 mb-4">روابط سريعة</h3>
-          <ul className="grid grid-cols-2 gap-4 justify-center">
+          <ul className="justify-center text-center">
             <li>
               <a
                 href="https://www.cairo.gov.eg/ar/Hay_AlSalamSecond/Pages/default.aspx"

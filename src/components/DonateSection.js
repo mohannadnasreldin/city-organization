@@ -4,7 +4,7 @@ import qrImage from '../assets/qr.jpg';
 const DonateSection = () => {
   return (
     <section id="donate" className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 py-16 px-6 md:px-24 text-center text-white" dir="rtl">
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-3xl shadow-2xl transition-all duration-500 transform hover:scale-105">
+      <div className="max-w-7xl mx-auto bg-white p-8 rounded-3xl shadow-2xl transition-all duration-500 transform hover:scale-105">
         <h2 className="text-4xl font-extrabold text-red-600 mb-6 tracking-wide">
           للتبرع لجمعية تنمية المدينة
         </h2>
@@ -15,8 +15,8 @@ const DonateSection = () => {
           <img
             src={qrImage}
             alt="QR Code"
-            className="w-48 h-48 md:w-56 md:h-56 mx-auto rounded-lg shadow-lg transform hover:scale-110 transition-all duration-300 shadow-xl"
-          />
+            className="hidden sm:block w-48 h-48 md:w-56 md:h-56 mx-auto rounded-lg shadow-lg transform hover:scale-110 transition-all duration-300 shadow-xl"
+            />
         </div>
         <p className="text-lg mt-4 text-gray-700">
           حساب إنستا باي: 
