@@ -63,19 +63,19 @@ const Footer = () => {
             </a>
           </p>
           <p className="text-gray-300 mt-2">
-            <FaMapMarkerAlt className="inline-block ml-2 text-yellow-300" />
-            العنوان:{' '}
-            <a
-              href="https://maps.app.goo.gl/erAgwPeMpS2JMtZWA"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open location in Google Maps"
-              className="text-yellow-300 hover:underline truncate"
-            >
-              قطعة 4 بلوك 12 بجوار المنارة للخضروات والفاكهة - منتجع النخيل،
-              مدخل 2
-            </a>
-          </p>
+  <FaMapMarkerAlt className="inline-block ml-2 text-yellow-300" />
+  العنوان:{' '}
+  <a
+    href="https://maps.app.goo.gl/erAgwPeMpS2JMtZWA"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Open location in Google Maps"
+    className="text-yellow-300 hover:underline break-words"
+  >
+    قطعة 4 بلوك 12 بجوار المنارة للخضروات والفاكهة - منتجع النخيل، مدخل 2
+  </a>
+</p>
+
           <p className="text-gray-300 mt-2">
             📧 البريد الإلكتروني:{' '}
             <a
