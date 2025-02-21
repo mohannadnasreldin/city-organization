@@ -10,6 +10,7 @@ import ActivityDetails from './components/ActivityDetails';
 import GoalsSection from './components/GoalsSection';
 import VolunteerSection from './components/VolunteerSection';
 import FoundersSection from './components/FoundersSection';
+import FoundersGridSection from './components/FoundersGridSection';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
                 <VolunteerSection />
                 <AboutSection />
                 <FoundersSection />
+                <FoundersGridSection />
                 <DonateSection />
               </>
             } />
