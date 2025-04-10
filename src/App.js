@@ -31,7 +31,7 @@ const App = () => {
                 <AboutSection />
                 <FoundersSection />
                 <FoundersGridSection />
-                <DonateSection />
+                {/* <DonateSection /> */}
               </>
             } />
             <Route path="/:id" element={<ActivityDetails />} />

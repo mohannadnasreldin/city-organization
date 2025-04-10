@@ -30,7 +30,7 @@ const Footer = () => {
             >
               <FaTelegram size={40} />
             </a>
-            <a
+            {/* <a
               href="https://chat.whatsapp.com/F18u5uuJHZpEIzjCrnLC9t"
               target="_blank"
               rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Footer = () => {
               className="text-yellow-300 hover:scale-110 transition-transform duration-300"
             >
               <FaWhatsapp size={40} />
-            </a>
+            </a> */}
             <a
               href="https://www.facebook.com/profile.php?id=61569368545936"
               target="_blank"
@@ -49,7 +49,7 @@ const Footer = () => {
               <FaFacebook size={40} />
             </a>
           </div>
-          <p className="mt-4 text-gray-300">
+          {/* <p className="mt-4 text-gray-300">
             <FaPhoneAlt className="inline-block ml-2 text-yellow-300" />
             رقم الهاتف:{' '}
             <a
@@ -61,7 +61,7 @@ const Footer = () => {
             >
               01211101073
             </a>
-          </p>
+          </p> */}
           <p className="text-gray-300 mt-2">
   <FaMapMarkerAlt className="inline-block ml-2 text-yellow-300" />
   العنوان:{' '}
